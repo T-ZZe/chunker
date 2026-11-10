@@ -1,0 +1,18 @@
+name: Chunker
+version: 1.0
+main: fr.chunker.ChunkerPlugin
+api-version: "26.3"
+softdepend: [CombatTagPlugin]
+commands:
+  chunker:
+    description: Gestion des zones protégées (admin)
+    usage: /chunker [set|remove|list]
+    permission: chunker.admin
+    permission-message: "§cCette commande est réservée aux opérateurs."
+permissions:
+  chunker.admin:
+    description: Utiliser /chunker
+    default: op
+  chunker.bypass:
+    description: Casser/poser des blocs dans une zone protégée (personne par défaut)
+    default: false
